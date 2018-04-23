@@ -1,0 +1,6 @@
+(define (digit n)
+   (if (< n 10) n (+ (modulo n 10) (digit(quotient n 10)))
+   )
+)
+(display (digit (read)))
+(newline)
